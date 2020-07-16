@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    margin-top: 360px;
+    font-size: 100px;
+    position: relative;
+    font-family: fantasy;
+    letter-spacing: 0.05em;
+    color: transparent;
+}
+h1:before{
+    content: attr(text);
+    position: absolute;
+    color: lawngreen;
+    overflow: hidden;
+    width: 100%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
